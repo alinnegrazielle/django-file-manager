@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Repositório de Arquivos</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Upload de Arquivos</title>
+</head>
+
+<body>
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <!-- <div class="logo">
+                        <img src="./img/logo.png" />
+                    </div> -->
+                <div class="redes-sociais">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="{% static 'img/github.jpg' %}" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="{% static 'img/linkedin.png' %}" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="{% url 'index' %}">Home</a>
+                    </li>
+                    {% if request.user.is_authenticated %}
+                    <li><a href="{% url 'listar-categorias' %}">Files</a></li>
+                    <li><a href="{% url 'logout' %}">Sair</a></li>
+                    {% else %}
+                    <li>
+                        <a href="{% url 'login' %}">Login</a>
+                    </li>
+                    {% endif %}
+                    <li><a href="#" style="text-decoration: none;">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    {% block conteudo %}
+    {% endblock %}
+</body>
+
+</html>
