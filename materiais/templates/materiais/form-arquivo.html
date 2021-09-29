@@ -1,0 +1,33 @@
+{% extends 'paginas/base.html' %}
+
+{% load static %}
+
+{% block menu %}
+{% endblock %}
+
+{% block titulo %}
+
+<title>Criar categorias</title>
+
+{% endblock %}
+
+<div class="container">
+    {% block conteudo %}
+
+    <h2>Upar Arquivo</h2>
+
+    <h5>Preencha todos os campos obrigatórios</h5>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">Criar</button>
+
+    </form>
+</div>
+{% endblock %}
+
+{% block rodape %}
+{% endblock %}

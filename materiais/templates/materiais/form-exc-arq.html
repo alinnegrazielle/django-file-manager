@@ -1,0 +1,38 @@
+{% extends 'paginas/base.html' %}
+
+{% load static %}
+
+{% block menu %}
+{% endblock %}
+
+{% block titulo %}
+
+<title>Excluir arquivo</title>
+
+{% endblock %}
+
+<div class="container">
+    {% block conteudo %}
+
+    <h2>Excluir arquivo</h2>
+
+    <h5>Confirme para excluir o arquivo definitivamente.</h5>
+
+    <form action="" method="POST">
+
+        <p>
+            Deseja excluir o arquivo: {{ object }}?
+        </p>
+
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">Excluir</button>
+
+    </form>
+</div>
+{% endblock %}
+
+{% block rodape %}
+{% endblock %}

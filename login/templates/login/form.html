@@ -1,0 +1,31 @@
+{% extends 'paginas/base.html' %}
+
+{% load static %}
+
+{% block menu %}
+{% endblock %}
+
+{% block titulo %}
+
+<title>Entrar no Acervo Privado</title>
+
+{% endblock%}
+
+{% block conteudo %}
+
+<h4>Login</h4>
+
+<form method="POST">
+
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{ next }}">
+
+    {{ form.as_p }}
+    <button type="submit">Entrar</button>
+
+</form>
+
+{% block rodape %}
+{% endblock %}
+
+{% endblock %}

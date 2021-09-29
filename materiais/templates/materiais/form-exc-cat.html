@@ -1,0 +1,38 @@
+{% extends 'paginas/base.html' %}
+
+{% load static %}
+
+{% block menu %}
+{% endblock %}
+
+{% block titulo %}
+
+<title>Excluir categorias</title>
+
+{% endblock %}
+
+<div class="container">
+    {% block conteudo %}
+
+    <h2>Excluir categoria</h2>
+
+    <h5>Confirme para excluir a categoria definitivamente.</h5>
+
+    <form action="" method="POST">
+
+        <p>
+            Deseja excluir a categoria: {{ object }}?
+        </p>
+
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">Excluir</button>
+
+    </form>
+</div>
+{% endblock %}
+
+{% block rodape %}
+{% endblock %}
