@@ -44,7 +44,7 @@
                         <a href="{% url 'index' %}">Home</a>
                     </li>
                     {% if request.user.is_authenticated %}
-                    <li><a href="{% url 'listar-categorias' %}">Files</a></li>
+                    <li><a href="{% url 'listar-arquivos' %}">Files</a></li>
                     <li><a href="{% url 'logout' %}">Sair</a></li>
                     {% else %}
                     <li>
