@@ -11,22 +11,24 @@
 
 {% endblock %}
 
+{% block content %}
+
 <div class="container">
-{% block conteudo %}
-    
-<h2>Criar categorias</h2>
 
-<h5>Preencha o campo obrigatório</h5>
+    <h2>Criar categorias</h2>
 
-<form action="" method="POST">
-    {% csrf_token %}
+    <h5>Preencha o campo obrigatório</h5>
 
-    {{ form.as_p }}
+    <form action="" method="POST">
+        {% csrf_token %}
 
-    <button type="submit">Criar</button>
+        {{ form.as_p }}
 
-</form>
+        <button type="submit">Criar</button>
+
+    </form>
 </div>
+
 {% endblock %}
 
 {% block rodape %}

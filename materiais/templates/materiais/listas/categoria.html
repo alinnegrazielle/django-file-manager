@@ -5,35 +5,37 @@
 {% block menu %}
 {% endblock %}
 
-{% block conteudo %}
-<h3>Categories</h3>
+{% block content %}
 
-<a href="{% url 'criar-categoria' %}">Adicionar Categoria</a>
+<div class="container">
 
-<table>
-    <tr>
-        <th>Nome</th>
-        <th>Opções</th>
-    </tr>
+    <a href="{% url 'criar-categoria' %}">Adicionar Categoria</a>
 
-    {% for categoria in object_list %}
-    <tr>
-        <td>
-            <a href="{% url 'listar-arquivos' %}">{{ categoria.nome }}</a>
-        </td>
-        <td>
-            <a href="{% url 'editar-categoria' categoria.pk %}">Editar</a>
-            <a href="{% url 'excluir-categoria' categoria.pk %}">Excluir</a>
-        </td>
-    </tr>
-    {% empty %}
-    <tr>
-        <td>Nenhum campo registrado.</td>
-    </tr>
-    {% endfor %}
-</table>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Opções</th>
+        </tr>
 
-{% block rodape %}
+        {% for categoria in object_list %}
+        <tr>
+            <td>
+                <a href="{% url 'listar-arquivos' %}">{{ categoria.nome }}</a>
+            </td>
+            <td>
+                <a href="{% url 'editar-categoria' categoria.pk %}">Editar</a>
+                <a href="{% url 'excluir-categoria' categoria.pk %}">Excluir</a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td>Nenhum campo registrado.</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
 {% endblock %}
 
+{% block rodape %}
 {% endblock %}
