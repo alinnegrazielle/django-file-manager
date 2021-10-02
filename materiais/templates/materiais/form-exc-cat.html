@@ -5,33 +5,30 @@
 {% block menu %}
 {% endblock %}
 
-{% block titulo %}
+{% block content %}
 
-<title>Excluir categorias</title>
+<h3>Excluir categoria</h3>
 
-{% endblock %}
+<p class="lead">
+    Confirme para excluir o registro definitivamente.
+</p>
 
-<div class="container">
-    {% block conteudo %}
+<hr>
+<form action="" method="POST">
 
-    <h2>Excluir categoria</h2>
+    <p>
+        Deseja excluir a categoria: <strong> {{ object }}</strong>?
+    </p>
 
-    <h5>Confirme para excluir a categoria definitivamente.</h5>
+    {% csrf_token %}
 
-    <form action="" method="POST">
+    {{ form.as_p }}
 
-        <p>
-            Deseja excluir a categoria: {{ object }}?
-        </p>
+    <button type="submit" class="btn btn-danger">Excluir</button>
 
-        {% csrf_token %}
-
-        {{ form.as_p }}
-
-        <button type="submit">Excluir</button>
-
-    </form>
+</form>
 </div>
+
 {% endblock %}
 
 {% block rodape %}

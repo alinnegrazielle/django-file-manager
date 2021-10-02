@@ -1,7 +1,5 @@
 {% extends 'paginas/base.html' %}
 
-{% load static %}
-
 {% load crispy_forms_tags %}
 
 {% block content %}
@@ -9,17 +7,14 @@
     <div class="col-5">
         <div class="card">
             <div class="card-body">
-                <h2>Login</h2>
-                <form method="POST" novalidate>
+                <h2>Register</h2>
+                <form method="post">
                     {% csrf_token %}
                     {{ form|crispy }}
-                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <button type="submit" class="btn btn-primary">Register</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
-{% endblock %}
-
-{% block rodape %}
 {% endblock %}

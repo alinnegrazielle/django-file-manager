@@ -5,33 +5,28 @@
 {% block menu %}
 {% endblock %}
 
-{% block titulo %}
-
-<title>Excluir arquivo</title>
-
-{% endblock %}
-
 {% block content %}
 
-<div class="container">
+<h3>Excluir arquivo</h3>
 
-    <h2>Excluir arquivo</h2>
+<p class="lead">
+    Confirme para excluir o registro definitivamente.
+</p>
 
-    <h5>Confirme para excluir o arquivo definitivamente.</h5>
+<hr>
+<form action="" method="POST">
 
-    <form action="" method="POST">
+    <p>
+        Deseja excluir o arquivo: <strong> {{ object }}</strong>?
+    </p>
 
-        <p>
-            Deseja excluir o arquivo: {{ object }}?
-        </p>
+    {% csrf_token %}
 
-        {% csrf_token %}
+    {{ form.as_p }}
 
-        {{ form.as_p }}
+    <button type="submit" class="btn btn-danger">Excluir</button>
 
-        <button type="submit">Excluir</button>
-
-    </form>
+</form>
 </div>
 
 {% endblock %}

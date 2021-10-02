@@ -2,16 +2,17 @@
 
 {% load static %}
 
-{% block menu %}
-{% endblock %}
-
 {% block content %}
 
-<div class="container">
+<h3>
+    Lista de Arquivos Upados
+    <a href="{% url 'upar-arquivo' %}" class="btn btn-primary btn-sm float-right">Adicionar arquivo</a>
+</h3>
 
-    <a href="{% url 'upar-arquivo' %}">Adicionar Arquivo</a>
+<hr>
 
-    <table>
+<div class="table-responsive">
+    <table class="table table-striped">
         <tr>
             <th>Nome</th>
             <th>Categoria</th>
@@ -28,14 +29,18 @@
             <td>{{ arquivo.descricao }}</td>
             <td>{{ arquivo.arquivo }}</td>
             <td>
-                <a href="{% url 'editar-arquivo' arquivo.pk %}">Editar</a>
-                <a href="{% url 'excluir-arquivo' arquivo.pk %}">Excluir</a>
+                <a href="{% url 'editar-arquivo' arquivo.pk %}" class="btn btn-warning btn-sm">Editar
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </a>
+                <a href="{% url 'excluir-arquivo' arquivo.pk %}" class="btn btn-danger btn-sm">Excluir
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </a>
             </td>
             {% endif %}
         </tr>
         {% empty %}
         <tr>
-            <td>Nenhum arquivo upado.</td>
+            <td colspan="3">Nenhum arquivo upado.</td>
         </tr>
         {% endfor %}
     </table>

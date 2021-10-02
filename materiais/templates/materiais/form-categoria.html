@@ -2,31 +2,26 @@
 
 {% load static %}
 
-{% block menu %}
-{% endblock %}
-
-{% block titulo %}
-
-<title>Criar categorias</title>
-
-{% endblock %}
+{% load crispy_forms_tags %}
 
 {% block content %}
+<h3>Criar Categoria</h3>
 
-<div class="container">
+<p class="lead">
+    Preencha o campo obrigatoriamente.
+</p>
 
-    <h2>Criar categorias</h2>
+<hr>
 
-    <h5>Preencha o campo obrigatório</h5>
+<form action="" method="POST">
 
-    <form action="" method="POST">
-        {% csrf_token %}
+    {% csrf_token %}
 
-        {{ form.as_p }}
+    {{ form|crispy }}
 
-        <button type="submit">Criar</button>
+    <button type="submit" class="btn btn-light mt-8">Criar</button>
 
-    </form>
+</form>
 </div>
 
 {% endblock %}

@@ -2,31 +2,26 @@
 
 {% load static %}
 
-{% block menu %}
-{% endblock %}
-
-{% block titulo %}
-
-<title>Criar categorias</title>
-
-{% endblock %}
+{% load crispy_forms_tags %}
 
 {% block content %}
+<h3>Upar arquivos</h3>
 
-<div class="container">
+<p class="lead">
+    Preencha todos os campos obrigatoriamente.
+</p>
 
-    <h2>Upar Arquivo</h2>
+<hr>
 
-    <h5>Preencha todos os campos obrigatórios</h5>
+<form action="" method="POST" enctype="multipart/form-data">
 
-    <form action="" method="POST">
-        {% csrf_token %}
+    {% csrf_token %}
 
-        {{ form.as_p }}
+    {{ form|crispy }}
 
-        <button type="submit">Criar</button>
+    <button type="submit" class="btn btn-light mt-3">Criar</button>
 
-    </form>
+</form>
 </div>
 
 {% endblock %}

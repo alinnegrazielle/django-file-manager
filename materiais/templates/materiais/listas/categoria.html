@@ -2,16 +2,17 @@
 
 {% load static %}
 
-{% block menu %}
-{% endblock %}
-
 {% block content %}
 
-<div class="container">
+<h3>
+    Lista de Categorias Registradas
+    <a href="{% url 'criar-categoria' %}" class="btn btn-primary btn-sm float-right">Adicionar Categoria</a>
+</h3>
 
-    <a href="{% url 'criar-categoria' %}">Adicionar Categoria</a>
+<hr>
 
-    <table>
+<div class="table-responsive">
+    <table class="table table-striped">
         <tr>
             <th>Nome</th>
             <th>Opções</th>
@@ -23,13 +24,17 @@
                 <a href="{% url 'listar-arquivos' %}">{{ categoria.nome }}</a>
             </td>
             <td>
-                <a href="{% url 'editar-categoria' categoria.pk %}">Editar</a>
-                <a href="{% url 'excluir-categoria' categoria.pk %}">Excluir</a>
+                <a href="{% url 'editar-categoria' categoria.pk %}" class="btn btn-warning btn-sm">Editar
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </a>
+                <a href="{% url 'excluir-categoria' categoria.pk %}" class="btn btn-danger btn-sm">Excluir
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </a>
             </td>
         </tr>
         {% empty %}
         <tr>
-            <td>Nenhum campo registrado.</td>
+            <td colspan="3">Nenhum campo registrado.</td>
         </tr>
         {% endfor %}
     </table>
