@@ -1,0 +1,1 @@
+web: gunicorn djangoFileManager.wsgi --lof-file -
