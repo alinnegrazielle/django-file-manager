@@ -3,21 +3,12 @@
 {% load static %}
 
 {% block content %}
-<div class="container-fluid px3">
-    <div class="row min-vh-20">
-        <div class="col-md-8 col-lg-6 col-xl-5 d-flex align-items-center">
-            <div class="w-100 py-5 px-md-5 px-xl-6 position-relative">
-                <p>Bem-vindos ao DjangoFileManager!</p>
-
-                <h1>Sobre o projeto</h1>
-                <p class="lead">Sistema para gerenciamento de arquivos (.pdf).</p>
-
-                <p>Em breve mais detalhes.</p>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-xl-7 d-none d-md-block">
-            <img src="{% static 'img/notebook.jpg' %}" alt="notebook">
-        </div>
-    </div>
+<div class="container">
+    <h1>Homepage</h1>
+    <p class="lead">Aplicação web desenvolvida em Django para gerenciamento de arquivos (.pdf)</p>
+    <p>Welcome to My Site, {% if user.is_authenticated %}{{ user.username }}{% else %}visitor{% endif %}!</p>
 </div>
+{% endblock %}
+
+{% block rodape %}
 {% endblock %}

@@ -5,10 +5,10 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<div class="container-fluid px3">
-    <div class="row min-vh-10">
-        <div class="col-md-8 col-lg-6 col-xl-5 d-flex align-items-center">
-            <div class="w-100 py-5 px-md-5 px-xl-6 position-relative">
+<div class="row justify-content-center">
+    <div class="col-5">
+        <div class="card">
+            <div class="card-body">
                 <h2>Login</h2>
                 <form method="POST" novalidate>
                     {% csrf_token %}
@@ -16,9 +16,6 @@
                     <button type="submit" class="btn btn-primary">Entrar</button>
                 </form>
             </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-xl-7 d-none d-md-block">
-            <img src="{% static 'img/notebook.jpg' %}" alt="notebook">
         </div>
     </div>
 </div>
