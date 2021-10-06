@@ -23,7 +23,7 @@ class ArquivoCreate(LoginRequiredMixin, CreateView):
     model = Arquivo
     fields = ['nome', 'descricao', 'categoria', 'arquivo']
     template_name = 'materiais/form-arquivo.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('listar-arquivos')
 
 ##################### UPAGENS ######################
 
@@ -41,7 +41,7 @@ class ArquivoUpdate(LoginRequiredMixin, UpdateView):
     model = Arquivo
     fields = ['nome', 'descricao', 'categoria', 'arquivo']
     template_name = 'materiais/form-arquivo.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('listar-arquivos')
 
 ##################### UPAGENS ######################
 
@@ -57,7 +57,7 @@ class ArquivoDelete(LoginRequiredMixin, DeleteView):
     login_url = reverse_lazy('login')
     model = Arquivo
     template_name = 'materiais/form-exc-arq.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('listar-arquivos')
 
 ##################### LISTAGENS ######################
 
