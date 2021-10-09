@@ -1,12 +1,17 @@
 # Website para Gerenciamento de Arquivos 
 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/alinnegrazielle/DjangoFileManager/blob/main/LICENSE) 
+
 # Features
 
 Esta é uma aplicação full stack web construída para desenvolver habilidades com o framework Django. 
 
 O Sistema consiste de uma gerenciador de arquivos, onde o usuário pode fazer o upload de seus livros e artigos (.pdf) e ainda editá-los e/ou excluí-los. 
 
-O projeto também possui um sistema de login, em que qualquer pessoa pode se registrar.
+O projeto também possui um sistema de login, para que um novo usuário possa se registrar.
+
+![](https://github.com/alinnegrazielle/DjangoFileManager/blob/main/django.gif)
+
 
 # Tecnologias utilizadas
 ## Back end
@@ -17,7 +22,6 @@ O projeto também possui um sistema de login, em que qualquer pessoa pode se reg
 - HTML / CSS / JS 
 
 ## Implantação em produção
-- Back end: Heroku
 - Banco de dados: Postgresql
 
 ## 🎲 Rodando o Back End (servidor)
