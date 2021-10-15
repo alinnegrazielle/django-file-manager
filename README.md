@@ -6,7 +6,7 @@
 
 Esta é uma aplicação full stack web construída para desenvolver habilidades com o framework Django. 
 
-O Sistema consiste de uma gerenciador de arquivos, onde o usuário pode fazer o upload de seus livros e artigos (.pdf) e ainda editá-los e/ou excluí-los. 
+O Sistema consiste de um gerenciador de arquivos, onde o usuário pode fazer o upload de seus livros e artigos (.pdf) e ainda editá-los e/ou excluí-los. 
 
 O projeto também possui um sistema de login e cadastro para novos usuários.
 
