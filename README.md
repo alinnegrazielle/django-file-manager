@@ -8,7 +8,7 @@ Esta é uma aplicação full stack web construída para desenvolver habilidades 
 
 O Sistema consiste de uma gerenciador de arquivos, onde o usuário pode fazer o upload de seus livros e artigos (.pdf) e ainda editá-los e/ou excluí-los. 
 
-O projeto também possui um sistema de login, para que um novo usuário possa se registrar.
+O projeto também possui um sistema de login e cadastro para novos usuários.
 
 ![](https://github.com/alinnegrazielle/DjangoFileManager/blob/main/django.gif)
 
