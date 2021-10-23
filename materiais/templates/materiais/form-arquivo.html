@@ -5,24 +5,26 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<h3>Upar arquivos</h3>
+<h2>Upar arquivos</h2>
 
 <p class="lead">
     Preencha todos os campos obrigatoriamente.
 </p>
 
 <hr>
+<div class="col-md-4 col-lg-6 col-xl-5">
 
-<form action="" method="POST" enctype="multipart/form-data">
+    <form action="" method="POST">
 
-    {% csrf_token %}
+        {% csrf_token %}
 
-    {{ form|crispy }}
+        {{ form|crispy }}
 
-    <button type="submit" class="btn btn-light mt-3">Criar</button>
+        <button type="submit" class="btn btn-primary">Criar</button>
+    </form>
 
-</form>
 </div>
+
 
 {% endblock %}
 

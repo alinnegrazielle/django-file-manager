@@ -12,16 +12,16 @@
 </p>
 
 <hr>
+<div class="col-md-4 col-lg-6 col-xl-5">
+    <form action="" method="POST">
 
-<form action="" method="POST">
+        {% csrf_token %}
 
-    {% csrf_token %}
+        {{ form|crispy }}
 
-    {{ form|crispy }}
+        <button type="submit" class="btn btn-primary">Criar</button>
 
-    <button type="submit" class="btn btn-light mt-8">Criar</button>
-
-</form>
+    </form>
 </div>
 
 {% endblock %}

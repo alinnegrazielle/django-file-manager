@@ -9,13 +9,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <title>{% block title %}Gerenciador de Arquivos Django{% endblock %}</title>
+    <title>{% block title %}Django File Manager{% endblock %}</title>
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/img.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 
     <style type="text/css">
+        textarea {
+            width: 80%;
+            height: 90px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            resize: none;
+        }
+
         .asteriskField {
             display: none;
         }
