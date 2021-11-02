@@ -1,27 +1,30 @@
-# Website para Gerenciamento de Arquivos 
+# Website para Gerenciamento de Arquivos
 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/alinnegrazielle/DjangoFileManager/blob/main/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/alinnegrazielle/DjangoFileManager/blob/main/LICENSE)
 
-# Features
+## Features
 
-Esta é uma aplicação full stack web construída para desenvolver habilidades com o framework Django. 
+Esta é uma aplicação full stack web construída para desenvolver habilidades com o framework Django.
 
-O Sistema consiste de um gerenciador de arquivos, onde o usuário pode fazer o upload de seus livros e artigos (.pdf) e ainda editá-los e/ou excluí-los. 
+O Sistema consiste de um gerenciador de arquivos, onde o usuário pode fazer o upload de seus livros e artigos (.pdf) e ainda editá-los e/ou excluí-los.
 
 O projeto também possui um sistema de login e cadastro para novos usuários.
 
-![](https://github.com/alinnegrazielle/DjangoFileManager/blob/main/django.gif)
+!()[https://github.com/alinnegrazielle/DjangoFileManager/blob/main/django.gif]
 
+## Tecnologias utilizadas
 
-# Tecnologias utilizadas
 ## Back end
-- Python 3.8.2
-- Django 3.2.5
+
+- Python
+- Django
 
 ## Front end
-- HTML / CSS / JS 
+
+- HTML / CSS / JS
 
 ## Implantação em produção
+
 - Banco de dados: Postgresql
 
 ## 🎲 Rodando o Back End (servidor)
@@ -51,11 +54,9 @@ $ python3 manage.py runserver
 # O servidor iniciará na porta: 8000
 ```
 
-
-# Autor
+## Autor
 
 Alinne Grazielle Mesquita de Farias.
 
-
- [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/alinnegrazielle/)
+[img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"](https://www.linkedin.com/in/alinnegrazielle/)
 
