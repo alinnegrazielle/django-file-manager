@@ -10,7 +10,7 @@ O Sistema consiste de um gerenciador de arquivos, onde o usuário pode fazer o u
 
 O projeto também possui um sistema de login e cadastro para novos usuários.
 
-!()[https://github.com/alinnegrazielle/DjangoFileManager/blob/main/django.gif]
+![](https://github.com/alinnegrazielle/DjangoFileManager/blob/main/django.gif)
 
 ## Tecnologias utilizadas
 
