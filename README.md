@@ -56,7 +56,4 @@ $ python3 manage.py runserver
 
 ## Autor
 
-Alinne Grazielle Mesquita de Farias.
-
-[img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"](https://www.linkedin.com/in/alinnegrazielle/)
-
+[![Linkedin: AlinneGrazielle](https://img.shields.io/badge/-AlinneGrazielle-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/alinnegrazielle/)](https://www.linkedin.com/in/alinnegrazielle/)
