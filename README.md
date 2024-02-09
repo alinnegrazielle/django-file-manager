@@ -31,7 +31,7 @@ O projeto também possui um sistema de login e cadastro para novos usuários.
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/alinnegrazielle/projeto-venus.git>
+$ git clone <[https://github.com/alinnegrazielle/projeto-venus.git](https://github.com/alinnegrazielle/django-file-manager.git)>
 
 # Faça a criação de um ambiente virtual
 $ python -m venv myenv
