@@ -1,8 +1,16 @@
 # Website para Gerenciamento de Arquivos
 
+> _Projeto desenvolvido durante minha fase inicial de transição de carreira para tecnologia, explorando back-end com Python/Django._
+
+
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/alinnegrazielle/DjangoFileManager/blob/main/LICENSE)
 
-## Features
+> ✅ Repositório arquivado para fins de documentação de aprendizado.  
+> 🎯 Foco atual: desenvolvimento front-end com React e construção de portfólio funcional.
+
+---
+
+## ✨ Descrição
 
 Esta é uma aplicação full stack web construída para desenvolver habilidades com o framework Django.
 
@@ -27,17 +35,21 @@ O projeto também possui um sistema de login e cadastro para novos usuários.
 
 - Banco de dados: Postgresql
 
-## 🎲 Rodando o Back End (servidor)
+## 🚀 Como rodar localmente
 
 ```bash
 # Clone este repositório
 $ git clone <[https://github.com/alinnegrazielle/projeto-venus.git](https://github.com/alinnegrazielle/django-file-manager.git)>
 
+# Acesse a pasta do projeto
+cd django-file-manager
+
 # Faça a criação de um ambiente virtual
 $ python -m venv myenv
 
 # Ative-o
-$ source myenv/bin/activate
+$ source myenv/bin/activate # Linux/macOS
+$ myenv\Scripts\activate    # Windows
 
 # Instale as dependências no ambiente virtual
 $ pip install -r requirements.txt
@@ -54,6 +66,3 @@ $ python3 manage.py runserver
 # O servidor iniciará na porta: 8000
 ```
 
-## Autor
-
-[![Linkedin: AlinneGrazielle](https://img.shields.io/badge/-AlinneGrazielle-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/alinnegrazielle/)](https://www.linkedin.com/in/alinnegrazielle/)
