@@ -5,8 +5,8 @@
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/alinnegrazielle/DjangoFileManager/blob/main/LICENSE)
 
-> ✅ Repositório arquivado para fins de documentação de aprendizado.  
-> 🎯 Foco atual: desenvolvimento front-end com React e construção de portfólio funcional.
+> ⚠️ Este repositório foi criado durante minha fase inicial de transição de carreira para tecnologia.  
+> ✅ Repositório arquivado para fins de documentação de aprendizado. 
 
 ---
 
